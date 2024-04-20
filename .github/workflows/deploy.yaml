@@ -23,6 +23,3 @@ jobs:
 
     - name: Deploy
       run: defang compose up -v --detach
-      env:
-        # just use github token
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
