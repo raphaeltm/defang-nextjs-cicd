@@ -26,4 +26,4 @@ jobs:
     - name: Deploy
       run: defang compose up -v --detach
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFANG_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
