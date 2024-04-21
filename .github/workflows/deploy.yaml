@@ -12,8 +12,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: Production
-    permissions: 
+    permissions:
       id-token: write
 
     steps:
