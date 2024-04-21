@@ -23,7 +23,8 @@ jobs:
     - name: Install defang
       run: . <(curl -s https://raw.githubusercontent.com/defang-io/defang/main/src/bin/install.sh)
 
+    - name: Login to Defang
+      run: defang login
+
     - name: Deploy
       run: defang compose up -v --detach
-      env:
-        DEFANG_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
